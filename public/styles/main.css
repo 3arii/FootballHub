@@ -10,6 +10,15 @@ html {
   background-color: #fff6e9;
 }
 
+ol {
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+ol li {
+  font-size: 20px;
+}
+
 button {
   background: none;
   border: none;
@@ -28,7 +37,12 @@ a {
   justify-content: center;
 }
 
-.title-row {
+.points-list {
+  list-style-type: none;
+}
+
+.points-item {
+  padding: 1.7px;
 }
 
 .column {

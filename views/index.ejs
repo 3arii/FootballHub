@@ -47,6 +47,23 @@
         </div>
       </div>
     </form>
-    <h1>TEST</h1>
+    <% if(locals.content && locals.points) { %>
+    <div class="row">
+      <div class="column">
+        <ol>
+          <% for(let i = 0; i < content.length; i++) { %>
+          <li><%= content[i] %></li>
+          <% } %>
+        </ol>
+      </div>
+      <div class="column">
+        <ol class="points-list">
+          <% for(let i = 0; i < points.length; i++) { %>
+          <li class="points-item"><%= points[i] %></li>
+          <% } %>
+        </ol>
+      </div>
+    </div>
+    <% } %>
   </body>
 </html>
